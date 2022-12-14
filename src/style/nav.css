@@ -1,0 +1,22 @@
+.navWrapper {
+    border: 2px solid red;
+    display: flex;
+    margin: 10px;
+    
+}
+.logo{
+    margin: auto;
+    border: 2px solid black;
+}
+.logOutBtnDiv{
+    margin: auto;
+}
+.logOutBtn{
+    width: 150px;
+    height: 40px;
+    color: black;
+    background-color: azure;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+}
