@@ -6,6 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
 
 // function createData(name, calories, fat, carbs, protein) {
 //   return { name, calories, fat, carbs, protein };
@@ -14,31 +15,31 @@ import Paper from '@mui/material/Paper';
 const rows = [
   {
     "name":"Frozen yoghurt",
-    "calories":159,
+    "calories":259,
     "fat":6.0,
     "carbs":24,
-    "protein":4.0
+    "protein":3.0
   },
   {
     "name":"Ice cream sandwich",
-    "calories":237,
+    "calories":137,
     "fat":9.0,
-    "carbs":37,
-    "protein":4.3
+    "carbs":36,
+    "protein":5.3
   },
   {
     "name":"Eclair",
-    "calories":262,
-    "fat":5.0,
-    "carbs":34,
+    "calories":162,
+    "fat":5.1,
+    "carbs":35,
     "protein":4.5
   },
   {
     "name":"Cupcake",
-    "calories":129,
+    "calories":229,
     "fat":6.0,
     "carbs":25,
-    "protein":2.0
+    "protein":4.0
   },
   {
     "name":"Gingerbread",
@@ -49,6 +50,9 @@ const rows = [
   }
 ];
 
+let actionBtn = () => {
+
+}
 
 let Item2Comp = ()=>{
     return(
@@ -61,6 +65,7 @@ let Item2Comp = ()=>{
                     <TableCell align="right">Fat&nbsp;(g)</TableCell>
                     <TableCell align="right">Carbs&nbsp;(g)</TableCell>
                     <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                    <TableCell align="right">Action&nbsp;</TableCell>
                 </TableRow>
                 </TableHead>    
             <TableBody>
@@ -76,6 +81,7 @@ let Item2Comp = ()=>{
                     <TableCell align="right">{row.fat}</TableCell>
                     <TableCell align="right">{row.carbs}</TableCell>
                     <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">{<Button variant="contained" onClick={actionBtn}>Action Button</Button>}</TableCell>
                     </TableRow>
                 ))}
             </TableBody>
